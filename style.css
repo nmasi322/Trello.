@@ -1,18 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
-/* font-family: 'Lobster Two', cursive; */
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+nav{
+    border-bottom: 1px solid rgb(243, 243, 243);
+}
 body{
     font-family: 'Raleway', sans-serif;
 }
+.logo{
+    margin: 14px;
+}
+span{
+    font-family: 'Lobster Two', cursive;
+    font-size: 30px;
+    position: relative;
+    top: -15px;
+}
+span:hover{
+    color: blueviolet;
+}
+html{
+    scroll-behavior: smooth;
+}
 section{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 #home{
@@ -20,6 +37,10 @@ section{
     background-size: cover;
     text-align: center;
     text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    color: rgb(131, 131, 131);
 }
 #home h2{
     font-size: 38px;
@@ -37,13 +58,17 @@ section{
     position: relative;
     top: 100px;
 }
-#home img{
+#home .bg{
     position: relative;
     top: 100px;
     width: 60%;
 }
+.code{
+    display: none;
+}
 #home #explore{
-    margin-top: -30px;
+    position: relative;
+    top: -40px;
     cursor: pointer;
     color: rgb(0, 119, 255);
     font-size: 18px;
@@ -61,10 +86,13 @@ section{
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    /* color: #333; */
+    border-bottom: 1px solid rgb(243, 243, 243);
 }
 .hide{
     display: none;
+}
+.active{
+    display: block;
 }
 #tags h3:hover{
     cursor: pointer;
@@ -76,4 +104,77 @@ section{
     width: 140px;
     padding: 5px;
     text-align: center;
+}
+#tags .row{
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tags .box{
+    width: 15%;
+    height: 150px;
+    margin: 30px;
+    padding: 7px;
+    border-radius: .2rem;
+    border: 3px solid;
+    border-image: linear-gradient(45deg, white, black) 3;
+    cursor: pointer;
+}
+#tags .box:hover{
+    border-image: linear-gradient(45deg, white, blue) 3;
+}
+#tags .box img{
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 20px;
+}
+.footer{
+    text-align: center;
+    min-height: 200px;
+}
+.footer h2{
+    position: relative;
+    top: 50px;
+}
+.footer a{
+    position: relative;
+    top: 80px;
+    margin: 18px;
+}
+
+
+
+
+@media (max-width: 760px) {
+    #home{
+        background: url(./images/bg1.webp);
+        background-size: cover;
+    }
+    #home h2{
+        font-size: 30px;
+        top: 30px;
+    }
+    #home p{
+        width: 90%;
+        top: 30px;
+    }
+    #home .bg{
+        display: none;
+    }
+    .code{
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 50px;
+        width: 50%;
+    }
+    #home #explore{
+        display: none;
+    }
+    #tags .box{
+        width: 100%;
+    }
 }
