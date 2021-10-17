@@ -1,10 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+/* font-family: 'Lobster Two', cursive; */
 
 *{
-    /* font-family: 'Raleway', sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo span{
-    font-family: 'Lobster Two', cursive;
+body{
+    font-family: 'Raleway', sans-serif;
+}
+section{
+    height: 100vh;
+    width: 100%;
+}
+#home{
+    background: url(./images/bg1.webp);
+    background-size: cover;
+    text-align: center;
+    text-transform: capitalize;
+}
+#home h2{
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 2;
+    position: relative;
+    top: 100px;
+}
+#home p{
+    width: 60%;
+    margin: auto;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+    top: 100px;
+}
+#home img{
+    position: relative;
+    top: 100px;
+    width: 60%;
+}
+#home #explore{
+    margin-top: -30px;
+    cursor: pointer;
+    color: rgb(0, 119, 255);
+    font-size: 18px;
+}
+#tags h2{
+    font-weight: bold;
+    line-height: 2;
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-size: 34px;
+}
+#tags .tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    /* color: #333; */
+}
+.hide{
+    display: none;
+}
+#tags h3:hover{
+    cursor: pointer;
+}
+#tags h3{
+    background: rgb(243, 243, 243);
+    margin: 30px;
+    border-radius: .3rem;
+    width: 140px;
+    padding: 5px;
+    text-align: center;
 }
