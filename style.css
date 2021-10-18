@@ -106,7 +106,6 @@ a{
     text-align: center;
 }
 #tags .row{
-    width: 100%;
     margin-left: 0px;
     display: flex;
     align-items: center;
@@ -149,10 +148,6 @@ a{
 
 
 @media (max-width: 760px) {
-    #home{
-        background: url(./images/bg1.webp);
-        background-size: cover;
-    }
     #home h2{
         font-size: 30px;
         top: 30px;
@@ -174,7 +169,36 @@ a{
     #home #explore{
         display: none;
     }
+    #tags .row{
+        display: block;
+    }
     #tags .box{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #home p{
+        top: 70px;
         width: 100%;
+    }
+    #home h2{
+        font-size: 25px;
+        line-height: 1.4;
+        top: 50px;
+    }
+    .code{
+        top: 80px;
+    }
+    #tags .box{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }#home #explore{
+        display: block;
+        margin-top: 100px;
     }
 }
